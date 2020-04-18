@@ -3,5 +3,5 @@ t =
 S'(t) = I(t)
 I'(t) = R(t)
 I(t) = b*S(t)
-f%**t = R(t)
+f**t = R(t)
 
