@@ -1,7 +1,7 @@
 
 t = 
-S'(t) = I(t)
-I'(t) = R(t)
+b = 
 I(t) = b*S(t)
 f**t = R(t)
 
+S'(t) er stigning / synking i hvor mange som kan bli smittet.
