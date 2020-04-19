@@ -1,7 +1,1 @@
-t = dager
-b = antall personer de syke smitter
-f = % syke blir friske
-S'(t) = -b*S(t)*I(t)
-R'(t) = f * I(t)
-
-S'(t) er stigning / synking i hvor mange som kan bli smittet.
+Resten?
