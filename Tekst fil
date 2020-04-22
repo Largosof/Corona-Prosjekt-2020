@@ -22,7 +22,8 @@ Stingningen til de friske vil komme ann på hvor mange syke det er og hvor mange
 
 S'(t)+I'(t)+R'(t)=0
 
-Alle personene vil være i en av disse gruppene så de vil tilsammen bli 0.
+Alle personene vil være i en av disse gruppene så de vil tilsammen bli 0. 
+Den totale endringen vil alltid være null fordi hvis det er stigning i en så vil det være tilsvarende synkning i en annen.
 
 I'(t)=b*s(t)*I(t)-f*I(t)
 
