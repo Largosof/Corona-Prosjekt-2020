@@ -7,16 +7,11 @@ R(0) = 0
 D(t) = I(t)*d
 d = 0,0255921589980942 = 2,559215%
 
-
 60 dager, 7 467 smittet (påvist), 137 210 smittet (mistenkt eller påvist)
-
 
 t(smittede)*b(en konstant av hvor mange én smitter)^d(dager)
 
-
-
 while t<61:
-
 
 n = 5 367 580
 b = 3
