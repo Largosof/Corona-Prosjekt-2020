@@ -1,7 +1,5 @@
 Koronavirus koding:
 
-t=0
-
 S(0) = n - I(0)
 I(0) = 1
 R(0) = 0
