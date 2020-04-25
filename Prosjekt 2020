@@ -2,7 +2,7 @@ Koronavirus koding:
 
 t=0
 
-S(0) = 5 367 579
+S(0) = n - I(0)
 I(0) = 1
 R(0) = 0
 
@@ -20,6 +20,6 @@ t(smittede)*b(en konstant av hvor mange én smitter)^d(dager)
 while t<61:
 
 
-
-b=3
-t+=1
+n = 5 367 580
+b = 3
+t += 1
