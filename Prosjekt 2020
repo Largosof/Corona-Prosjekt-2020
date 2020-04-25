@@ -10,7 +10,7 @@ D(t) = I(t)*d
 d =  0,0255921589980942 = 2,559215%
 
 
-60 dager, 7346 smittet (påvist), anntas ca. 50 000 (ikke påvist)
+60 dager, 7346 smittet (påvist) 
 
 
 t(smittede)*b(en konstant av hvor mange én smitter)^d(dager)
@@ -21,5 +21,5 @@ while t<60:
 
 
 
-
+b=3
 t+=1
