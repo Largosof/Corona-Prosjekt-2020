@@ -1,7 +1,7 @@
 Koronavirus koding:
 
 S(0) = 5 367 570
-I(0) = 10
+I(0) = 1
 R(0) = 0
 
 D(t) = I(t)*d
@@ -11,10 +11,10 @@ d =  0,0255921589980942 = 2,559215%
 58 dager, 7346 smittet (påvist), anntas ca. 50 000 (ikke påvist)
 
 
-t(smittede)*b(en konstant av hvor mange én smitter)^d(dager)
+I(t)(smittede)*b(en konstant av hvor mange én smitter)^t(dager)
 
-
-
+t+=1
+b = 3
 
 
 
