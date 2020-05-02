@@ -1,8 +1,8 @@
 Koronavirus koding:
 
 
-0. HAR VI GJORT HELE 8.20?
-1. VI MÅ FINNE B. 
+0. HAR VI GJORT HELE 8.20?                 DONE
+1. VI MÅ FINNE B.                          
 2. BRUK LIKNINGENE SOM ER I BOKA. 
         RETTE OPP KODE.
 3. LAGE FILER OG PLOTTE (ALT I ÉN / I FORSKJELLIGE). 
@@ -35,3 +35,5 @@ b = 3
 t += 1
 f = 5% (* eller / på I(t))
 d = 0,0255921589980942 = 2,559215%
+
+
