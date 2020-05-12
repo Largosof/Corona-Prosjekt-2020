@@ -11,29 +11,39 @@ Koronavirus koding:
 6. ...KOMMER...
 
 
-
-S(0) = n - I(0)
-I(0) = 1
-R(0) = 0
-D(t) = I(t)*d
-
-S'(t) = -b * S(t) * I(t)
-R'(t) = f * I(t)
-I'(t) = b * S(t) * I(t) - f * I(t)
-S'(t) + I'(t) + R'(t) = 0
+# Dette er en graf for hvis ingen ble satt i isolasjon, og har "tilgang på alle mennesker".
+import numpy as np
+import matplotlib.pyplot as plt
 
 
-60 dager, 7 467 smittet (påvist)
-
-t(smittede)*b(en konstant av hvor mange én smitter)^d(dager)
-
-while t<61:
-
-
-n = 5 367 580
-b = 3
-t += 1
-f = 5% (* eller / på I(t))
-d = 0,0255921589980942 = 2,559215%
+b = 6.25e-5             # burde egt være -3
+dt = 0.1                # liten dt
+D = 70                  # antall dager
+N_t = int(D/dt)
+N = 5368000/1000
+f = 0.013               # snitt prosent som blir friske hver dag (over 70 dager)
 
 
+t = np.linspace(0, D, D/dt+1)
+S = np.zeros(N_t+1)
+I = np.zeros(N_t+1)
+R = np.zeros(N_t+1)
+
+# Ved tid = 0
+S[0] = N-1
+I[0] = 1
+R[0] = 0
+
+# Step equations forward in time
+for n in range(N_t):
+    S[n+1] = S[n] - dt*b*S[n]*I[n]
+    I[n+1] = I[n] + dt*b*S[n]*I[n] - dt*f*I[n]
+    R[n+1] = R[n] + dt*f*I[n]
+
+plt.xlabel ('Dager')
+plt.ylabel ('Befolkningstall i 100 000')
+plt.plot(t, S, label = "S")
+plt.plot(t, I, label = "I")
+plt.plot(t, R, label = "R")
+plt.legend()
+plt.show()
